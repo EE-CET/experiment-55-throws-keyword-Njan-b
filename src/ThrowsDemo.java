@@ -1,9 +1,7 @@
-import java.io.IOException;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class ThrowsDemo {
-
-    // Method that declares it throws IOException
     static void check(int n) throws IOException {
         if (n < 0) {
             throw new IOException();
@@ -22,7 +20,5 @@ public class ThrowsDemo {
         catch (IOException e) {
             System.out.println("Caught: IO Exception");
         }
-
-        sc.close();
     }
 }
